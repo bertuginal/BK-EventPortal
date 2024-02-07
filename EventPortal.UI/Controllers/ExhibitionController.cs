@@ -15,6 +15,7 @@ namespace EventPortal.UI.Controllers
                     ExhibitionDescription = "Sergi",
                     ExhibitionTime = "18 Ağustos'a Kadar",
                     ExhibitionLocation = "Borusan Contemporary",
+                    ExhibitionPrice = 150.00,
                     ExhibitionImage = "mat_collishaw_heterosis.jpg"
                 },
                 new Exhibition
@@ -23,6 +24,7 @@ namespace EventPortal.UI.Controllers
                     ExhibitionDescription = "Sergi",
                     ExhibitionTime = "31 Aralık'a Kadar",
                     ExhibitionLocation = "İş Bankası Müzesi",
+                    ExhibitionPrice = 250.00,
                     ExhibitionImage = "yasasin-cumhuriyet-is-sanat-1.jpg"
                 },
                 new Exhibition
@@ -31,6 +33,7 @@ namespace EventPortal.UI.Controllers
                     ExhibitionDescription = "Sergi",
                     ExhibitionTime = "25 Şubat'a Kadar",
                     ExhibitionLocation = "Pera Müzesi",
+                    ExhibitionPrice = 550.00,
                     ExhibitionImage = "tam-yerinden-1.jpg"
                 },
                 new Exhibition
@@ -39,6 +42,7 @@ namespace EventPortal.UI.Controllers
                     ExhibitionDescription = "Sergi",
                     ExhibitionTime = "25 Şubat'a Kadar",
                     ExhibitionLocation = "Pera Müzesi",
+                    ExhibitionPrice = 450.00,
                     ExhibitionImage = "GH_salon_0051.jpg"
                 },
                 new Exhibition
@@ -47,6 +51,7 @@ namespace EventPortal.UI.Controllers
                     ExhibitionDescription = "Sergi",
                     ExhibitionTime = "7 Nisan'a Kadar",
                     ExhibitionLocation = "Ara Güler Müzesi",
+                    ExhibitionPrice = 170.00,
                     ExhibitionImage = "1695900048_Anamur__Mersin__1982.jpg"
                 },
                 new Exhibition
@@ -55,6 +60,7 @@ namespace EventPortal.UI.Controllers
                     ExhibitionDescription = "Sergi",
                     ExhibitionTime = "31 Mart'a Kadar",
                     ExhibitionLocation = "Salt Beyoğlu",
+                    ExhibitionPrice = 460.00,
                     ExhibitionImage = "13149.jpg"
                 },
                 new Exhibition
@@ -63,6 +69,7 @@ namespace EventPortal.UI.Controllers
                     ExhibitionDescription = "Sergi",
                     ExhibitionTime = "7 Nisan'a Kadar",
                     ExhibitionLocation = "Arter",
+                    ExhibitionPrice = 230.00,
                     ExhibitionImage = "aac10b45914a69ae7bc7db3abf5d6bab.jpg"
                 },
                 new Exhibition
@@ -71,6 +78,7 @@ namespace EventPortal.UI.Controllers
                     ExhibitionDescription = "Sergi",
                     ExhibitionTime = "1 Mart'a Kadar",
                     ExhibitionLocation = "Gallery 11.17",
+                    ExhibitionPrice = 110.00,
                     ExhibitionImage = "indir (9).jpg"
                 }
 

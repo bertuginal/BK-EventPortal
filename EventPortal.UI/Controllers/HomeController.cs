@@ -27,6 +27,7 @@ namespace EventPortal.UI.Controllers
                     ConcertDescription = "Pop Müzik",
                     ConcertTime = "19 Haziran Çarşamba, 21.30",
                     ConcertLocation = "Jolly Joker, Beyoğlu/İstanbul",
+                    ConcertPrice = 500.0,
                     ConcertImage = "hadise-konseri.jpg"
                 },
                  new Concert
@@ -36,6 +37,7 @@ namespace EventPortal.UI.Controllers
                     ConcertDescription = "Pop Müzik",
                     ConcertTime = "02 Mart Cumartesi, 22.00",
                     ConcertLocation = "Hangout PSM, Bornova/İzmir",
+                    ConcertPrice = 350.0,
                     ConcertImage = "athena-konseri.jpg"
                 },
                 new Concert
@@ -45,6 +47,7 @@ namespace EventPortal.UI.Controllers
                     ConcertDescription = "Pop Müzik",
                     ConcertTime = "09 Şubat Cuma, 21.00",
                     ConcertLocation = "SoldOut Performance Hall",
+                    ConcertPrice = 300.0,
                     ConcertImage = "aysegul-aldinc-konseri.jpg"
                 }
             };
@@ -78,7 +81,7 @@ namespace EventPortal.UI.Controllers
                     FestivalImage = "holi-fest.png"
                 }
             };
-            var stageList = new List<Theatre>()
+            var theatreList = new List<Theatre>()
             {                
                 new Theatre
                 {
@@ -180,7 +183,7 @@ namespace EventPortal.UI.Controllers
             {
                 ConcertList = concertList,
                 FestivalList = festivalList,
-                TheatreList = stageList,
+                TheatreList = theatreList,
                 ExhibitionList = exhibitionList,
                 ImageList = ımageList
             };

@@ -13,6 +13,7 @@ namespace EventPortal.DAL.Models
         public string FestivalType { get; set; }
         public string FestivalTime { get; set; }
         public string FestivalLocation { get; set; }
+        public double FestivalPrice { get; set; }
         public string FestivalImage { get; set; }
         
         
