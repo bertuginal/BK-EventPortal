@@ -16,10 +16,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Concert\" />
     <Folder Include="Views\Exhibition\" />
     <Folder Include="Views\Festival\" />
     <Folder Include="Views\Theatre\" />
+    <Folder Include="wwwroot\TheEvent\assets\img\activities\imagelist\" />
   </ItemGroup>
 
 </Project>

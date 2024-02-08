@@ -11,77 +11,95 @@ namespace EventPortal.UI.Controllers
             {
                 new Concert
                 {
-                    ConcertName = "INNELLEA",
-                    ConcertDescription = "Elektronik Müzik",
-                    ConcertTime = "10 Şubat Cumartesi",
-                    ConcertLocation = "Zorlu PSM",
-                    ConcertPrice = 500.0,
-                    ConcertImage = "innellea-web-mx3vo2qjss57-crop-480-480.jpg"
-                },
-                new Concert
-                {
-                    ConcertName = "SILA",
+                    ConcertName = "HADİSE",
+                    ConcertType = "Pop",
                     ConcertDescription = "Pop Müzik",
-                    ConcertTime = "14 Şubat Çarşamba",
-                    ConcertLocation = "Zorlu PSM",
-                    ConcertPrice = 350.0,
-                    ConcertImage = "channels4_profile.jpg"
+                    ConcertTime = "19 Haziran Çarşamba, 21.30",
+                    ConcertLocation = "Jolly Joker, Beyoğlu/İstanbul",
+                    ConcertPrice = 500.00,
+                    ConcertImage = "hadise-konseri.jpg"
                 },
-                new Concert
+                 new Concert
                 {
-                    ConcertName = "MABEL MATİZ",
+                    ConcertName = "ATHENA",
+                    ConcertType = "Pop",
                     ConcertDescription = "Pop Müzik",
-                    ConcertTime = "14 Şubat Çarşamba",
-                    ConcertLocation = "Volkswagen Arena",
-                    ConcertPrice = 450.0,
-                    ConcertImage = "mabel.jpg"
+                    ConcertTime = "02 Mart Cumartesi, 22.00",
+                    ConcertLocation = "Hangout PSM, Bornova/İzmir",
+                    ConcertPrice = 350.00,
+                    ConcertImage = "athena-konseri.jpg"
                 },
                 new Concert
                 {
-                    ConcertName = "ADRIATIQUE",
-                    ConcertDescription = "Elektronik Müzik",
-                    ConcertTime = "2 Mart Cumartesi",
-                    ConcertLocation = "Volkswagen Arena",
-                    ConcertPrice = 500.0,
-                    ConcertImage = "maxresdefault.jpg"
-                },
-                new Concert
-                {
-                    ConcertName = "EVGENY GRINKO",
-                    ConcertDescription = "Klasik Müzik",
-                    ConcertTime = "9 Mart Cumartesi",
-                    ConcertLocation = "Zorlu PSM",
-                    ConcertPrice = 650.0,
-                    ConcertImage = "b48f5c93c5d492fdb8c5b4108741450b.jpg"
-                },
-                new Concert
-                {
-                    ConcertName = "BERKAY",
+                    ConcertName = "AYŞEGÜL ALDİNÇ",
+                    ConcertType = "Pop",
                     ConcertDescription = "Pop Müzik",
-                    ConcertTime = "10 Şubat Cumartesi",
-                    ConcertLocation = "Bostancı Gösteri Merkezi",
-                    ConcertPrice = 250.0,
-                    ConcertImage = "ab6761610000e5ebefc7e159821a28351587cfba.jpg"
+                    ConcertTime = "09 Şubat Cuma, 21.00",
+                    ConcertLocation = "SoldOut Performance Hall",
+                    ConcertPrice = 300.00,
+                    ConcertImage = "aysegul-aldinc-konseri.jpg"
                 },
                 new Concert
                 {
-                    ConcertName = "PERDENİN ARDINDAKİLER",
-                    ConcertDescription = "Alternatif Müzik",
-                    ConcertTime = "18 Şubat Pazar",
-                    ConcertLocation = "Bostancı Gösteri Merkezi",
-                    ConcertPrice = 150.0,
-                    ConcertImage = "indir (4).jpg"
-                },
-                new Concert
-                {
-                    ConcertName = "GÖKHAN TÜRKMEN",
+                    ConcertName = "CEM ADRIAN",
+                    ConcertType = "Pop",
                     ConcertDescription = "Pop Müzik",
-                    ConcertTime = "9 Mart Cumartesi",
-                    ConcertLocation = "Zorlu PSM",
+                    ConcertTime = "10 Şubat Cumartesi, 23.00",
+                    ConcertLocation = "Ooze Venue",
+                    ConcertPrice = 500.00,
+                    ConcertImage = "cem-adrian-konseri.jpg"
+                },
+                new Concert
+                {
+                    ConcertName = "ADAMLAR",
+                    ConcertType = "Rock",
+                    ConcertDescription = "Rock Müzik",
+                    ConcertTime = "23 Şubat Cuma, 22.00",
+                    ConcertLocation = "Sponge Pub Konyaaltı",
+                    ConcertPrice = 650.00,
+                    ConcertImage = "adamlar-konseri.jpg"
+                },
+                new Concert
+                {
+                    ConcertName = "HAYKO CEPKİN",
+                    ConcertType = "Rock",
+                    ConcertDescription = "Rock Müzik",
+                    ConcertTime = "16 Mart Cumartesi, 22.00",
+                    ConcertLocation = "Hangout PSM",
+                    ConcertPrice = 500.00,
+                    ConcertImage = "hayko-cepkin-konseri.jpg"
+                },
+                new Concert
+                {
+                    ConcertName = "MANUŞ BABA",
+                    ConcertType = "Alternatif Rock",
+                    ConcertDescription = "Alternatif Rock",
+                    ConcertTime = "08 Mart Cuma, 21.30",
+                    ConcertLocation = "Dorock XL Kadıköy",
+                    ConcertPrice = 150.00,
+                    ConcertImage = "manus-baba-konseri.jpg"
+                },
+                new Concert
+                {
+                    ConcertName = "LEVENT YÜKSEL",
+                    ConcertType = "Pop",
+                    ConcertDescription = "Pop Müzik",
+                    ConcertTime = "24 Mart Pazar, 20.30",
+                    ConcertLocation = "EKM Erciyes Kültür Merkezi",
                     ConcertPrice = 200.0,
-                    ConcertImage = "ab67616d0000b273db01344ed89dc17b6062b7a3.jpg"
+                    ConcertImage = "levent-yuksel-konseri.jpg"
                 },
-            };
+                new Concert
+                {
+                    ConcertName = "HAKAN ALTUN",
+                    ConcertType = "Arabesk",
+                    ConcertDescription = "Arabesk Müzik",
+                    ConcertTime = "01 Mart Cuma, 23.00",
+                    ConcertLocation = "Ooze Venue",
+                    ConcertPrice = 200.0,
+                    ConcertImage = "hakan-altun-konseri.jpg"
+                }
+            };            
             return View(concertList);
         }
     }

@@ -141,41 +141,46 @@ namespace EventPortal.UI.Controllers
                     ExhibitionImage = "meksika-acmazi.png"
                 }
             };
-            var ımageList = new List<HomeImage>()
+            var imageList = new List<HomeImage>()
             {
                 new HomeImage
                 {
-                    ImageUrl = "perdenin-ardindakiler-konseri-37379.jpg",
+                    ImageUrl = "hadise-konseri.jpg",
+                    Link = "https://www.youtube.com"
+                },
+                new HomeImage
+                {
+                    ImageUrl = "athena-konseri.jpg",
+                    Link = "https://www.youtube.com"
+                },
+                new HomeImage
+                {
+                    ImageUrl = "aysegul-aldinc-konseri.jpg",
+                    Link = "https://www.youtube.com"
+                },
+                new HomeImage
+                {
+                    ImageUrl = "what-a-fest.png",
                     Link = "#"
                 },
                 new HomeImage
                 {
-                    ImageUrl = "gokhan-turkmen-202312281545432a30a0a4c2154d1196355b71880f6039.jpg",
+                    ImageUrl = "saatleri-ayarlama-enstitusu.jpg",
                     Link = "#"
                 },
                 new HomeImage
                 {
-                    ImageUrl = "PIylWQIplEaSkhX4yhTxQA.jpg",
+                    ImageUrl = "gulumseten-hatiralar.jpg",
                     Link = "#"
                 },
                 new HomeImage
                 {
-                    ImageUrl = "unnamed.jpg",
+                    ImageUrl = "sut-kardesler.jpg",
                     Link = "#"
                 },
                 new HomeImage
                 {
-                    ImageUrl = "b48f5c93c5d492fdb8c5b4108741450b.jpg",
-                    Link = "#"
-                },
-                new HomeImage
-                {
-                    ImageUrl = "Sefo.jpg",
-                    Link = "#"
-                },
-                new HomeImage
-                {
-                    ImageUrl = "ab67616d0000b273f22f0a3ab76b923df54b73b0.jpg",
+                    ImageUrl = "okan-cabalar.jpg",
                     Link = "#"
                 }
             };
@@ -185,7 +190,7 @@ namespace EventPortal.UI.Controllers
                 FestivalList = festivalList,
                 TheatreList = theatreList,
                 ExhibitionList = exhibitionList,
-                ImageList = ımageList
+                ImageList = imageList
             };
             return View(viewModel);
         }

@@ -55,7 +55,7 @@
                 {
                 <div class="col-lg-4 col-md-6">
                     <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-                            <a href="#"><img src="~/theevent/assets/img/activities/concert/@item.ConcertImage" alt="" class="img-fluid"></a>
+                            <a href=""><img src="~/theevent/assets/img/activities/concert/@item.ConcertImage" alt="@item.ConcertType" class="img-fluid"></a>
                         <div class="details">
                                 <h3><a href="speaker-details.html">@item.ConcertName</a></h3>
                                 <p style="color : #FFFFFF">@item.ConcertType</p>
@@ -66,9 +66,12 @@
                     </div>
                 </div>
                 }
-            </div>
+                <button type="button" class="btn btn-success btn-lg btn-block">KONSERLER ≫</button>
+            </div>            
         </div>
 
+        <br />
+        <br />
         <br />
 
         <div class="container" data-aos="fade-up">
@@ -93,9 +96,12 @@
                         </div>
                     </div>
                 }
+                <button type="button" class="btn btn-success btn-lg btn-block">FESTİVALLER ≫</button>
             </div>
         </div>
 
+        <br />
+        <br />
         <br />
 
         <div class="container" data-aos="fade-up">
@@ -120,9 +126,12 @@
                         </div>
                     </div>
                 }
+                <button type="button" class="btn btn-success btn-lg btn-block">TİYATROLAR ≫</button>
             </div>
         </div>
 
+        <br />
+        <br />
         <br />
 
         <div class="container" data-aos="fade-up">
@@ -147,110 +156,118 @@
                         </div>
                     </div>
                 }
+                <button type="button" class="btn btn-success btn-lg btn-block">GÖSTERİLER ≫</button>
             </div>
         </div>
 
     </section><!-- End Activities Section -->
-    
-    <!-- ======= Venue Section ======= -->
-    <section id="venue">
 
-        <div class="container-fluid" data-aos="fade-up">
+    <br />
+    <br />
+
+    <!-- ======= Subscribe Section ======= -->
+    <section id="subscribe">
+        <div class="container" data-aos="zoom-in">
+            <div class="section-header">
+                <h2>Newsletter</h2>
+                <p>Rerum numquam illum recusandae quia mollitia consequatur.</p>
+            </div>
+
+            <form method="POST" action="#">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-10 d-flex">
+                        <input type="text" class="form-control" placeholder="Enter your Email">
+                        <button type="submit" class="ms-2">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section><!-- End Subscribe Section -->
+
+    <br />
+    <br />
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery">
+
+        <div class="gallery-slider swiper">            
+            <div class="swiper-wrapper align-items-center">
+                @foreach (var item in Model.ImageList)
+                {
+                    <div class="swiper-slide"><a href="~/theevent/assets/img/activities/imagelist/@item.Link" class="gallery-lightbox"><img src="~/theevent/assets/img/activities/imagelist/@item.ImageUrl" class="img-fluid" alt=""></a></div>
+                }
+            </div>
+            <div class="swiper-pagination"></div>            
+        </div>
+
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="section-bg">
+
+        <div class="container" data-aos="fade-up">
 
             <div class="section-header">
-                <h2>Event Venue</h2>
-                <p>Event venue location info and gallery</p>
+                <h2>Bizimle İletişime Geç!</h2>
+                <p>Lütfen bilgilerinizi eksiksiz ve doğru doldurduğunuzdan emin olun.</p>
             </div>
 
-            <div class="row g-0">
-                <div class="col-lg-6 venue-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="row contact-info">
+
+                <div class="col-md-4">
+                    <div class="contact-address">
+                        <i class="bi bi-geo-alt"></i>
+                        <h3>Address</h3>
+                        <address>A108 Adam Street, NY 535022, USA</address>
+                    </div>
                 </div>
 
-                <div class="col-lg-6 venue-info">
-                    <div class="row justify-content-center">
-                        <div class="col-11 col-lg-8 position-relative">
-                            <h3>Downtown Conference Center, New York</h3>
-                            <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus. Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
+                <div class="col-md-4">
+                    <div class="contact-phone">
+                        <i class="bi bi-phone"></i>
+                        <h3>Phone Number</h3>
+                        <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-email">
+                        <i class="bi bi-envelope"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@example.com">info@example.com</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group col-md-6 mt-3 mt-md-0">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                         </div>
                     </div>
-                </div>
+                    <div class="form-group mt-3">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group mt-3">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="my-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+                    <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
             </div>
 
         </div>
-
-        <div class="container-fluid venue-gallery-container" data-aos="fade-up" data-aos-delay="100">
-            <div class="row g-0">
-
-                <div class="col-lg-3 col-md-4">
-                    <div class="venue-gallery">
-                        <a href="assets/img/venue-gallery/1.jpg" class="glightbox" data-gall="venue-gallery">
-                            <img src="assets/img/venue-gallery/1.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4">
-                    <div class="venue-gallery">
-                        <a href="assets/img/venue-gallery/2.jpg" class="glightbox" data-gall="venue-gallery">
-                            <img src="assets/img/venue-gallery/2.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4">
-                    <div class="venue-gallery">
-                        <a href="assets/img/venue-gallery/3.jpg" class="glightbox" data-gall="venue-gallery">
-                            <img src="assets/img/venue-gallery/3.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4">
-                    <div class="venue-gallery">
-                        <a href="assets/img/venue-gallery/4.jpg" class="glightbox" data-gall="venue-gallery">
-                            <img src="assets/img/venue-gallery/4.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4">
-                    <div class="venue-gallery">
-                        <a href="assets/img/venue-gallery/5.jpg" class="glightbox" data-gall="venue-gallery">
-                            <img src="assets/img/venue-gallery/5.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4">
-                    <div class="venue-gallery">
-                        <a href="assets/img/venue-gallery/6.jpg" class="glightbox" data-gall="venue-gallery">
-                            <img src="assets/img/venue-gallery/6.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4">
-                    <div class="venue-gallery">
-                        <a href="assets/img/venue-gallery/7.jpg" class="glightbox" data-gall="venue-gallery">
-                            <img src="assets/img/venue-gallery/7.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4">
-                    <div class="venue-gallery">
-                        <a href="assets/img/venue-gallery/8.jpg" class="glightbox" data-gall="venue-gallery">
-                            <img src="assets/img/venue-gallery/8.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </section><!-- End Venue Section -->
-
+    </section><!-- End Contact Section -->
     <!-- =======  F.A.Q Section ======= -->
     <section id="faq">
 
@@ -325,204 +342,6 @@
             </div>
 
         </div>
-
     </section><!-- End  F.A.Q Section -->
-    <!-- ======= Subscribe Section ======= -->
-    <section id="subscribe">
-        <div class="container" data-aos="zoom-in">
-            <div class="section-header">
-                <h2>Newsletter</h2>
-                <p>Rerum numquam illum recusandae quia mollitia consequatur.</p>
-            </div>
-
-            <form method="POST" action="#">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 col-md-10 d-flex">
-                        <input type="text" class="form-control" placeholder="Enter your Email">
-                        <button type="submit" class="ms-2">Subscribe</button>
-                    </div>
-                </div>
-            </form>
-
-        </div>
-    </section><!-- End Subscribe Section -->
-    <!-- ======= Buy Ticket Section ======= -->
-    <section id="buy-tickets" class="section-with-bg">
-        <div class="container" data-aos="fade-up">
-
-            <div class="section-header">
-                <h2>Buy Tickets</h2>
-                <p>Velit consequatur consequatur inventore iste fugit unde omnis eum aut.</p>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card mb-5 mb-lg-0">
-                        <div class="card-body">
-                            <h5 class="card-title text-muted text-uppercase text-center">Standard Access</h5>
-                            <h6 class="card-price text-center">$150</h6>
-                            <hr>
-                            <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Community Access</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
-                            </ul>
-                            <hr>
-                            <div class="text-center">
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="standard-access">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card mb-5 mb-lg-0">
-                        <div class="card-body">
-                            <h5 class="card-title text-muted text-uppercase text-center">Pro Access</h5>
-                            <h6 class="card-price text-center">$250</h6>
-                            <hr>
-                            <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
-                            </ul>
-                            <hr>
-                            <div class="text-center">
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="pro-access">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Pro Tier -->
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title text-muted text-uppercase text-center">Premium Access</h5>
-                            <h6 class="card-price text-center">$350</h6>
-                            <hr>
-                            <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Workshop Access</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>After Party</li>
-                            </ul>
-                            <hr>
-                            <div class="text-center">
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="premium-access">Buy Now</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Modal Order Form -->
-        <div id="buy-ticket-modal" class="modal fade">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Buy Tickets</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form method="POST" action="#">
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="your-name" placeholder="Your Name">
-                            </div>
-                            <div class="form-group mt-3">
-                                <input type="text" class="form-control" name="your-email" placeholder="Your Email">
-                            </div>
-                            <div class="form-group mt-3">
-                                <select id="ticket-type" name="ticket-type" class="form-select">
-                                    <option value="">-- Select Your Ticket Type --</option>
-                                    <option value="standard-access">Standard Access</option>
-                                    <option value="pro-access">Pro Access</option>
-                                    <option value="premium-access">Premium Access</option>
-                                </select>
-                            </div>
-                            <div class="text-center mt-3">
-                                <button type="submit" class="btn">Buy Now</button>
-                            </div>
-                        </form>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-
-    </section><!-- End Buy Ticket Section -->
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="section-bg">
-
-        <div class="container" data-aos="fade-up">
-
-            <div class="section-header">
-                <h2>Contact Us</h2>
-                <p>Nihil officia ut sint molestiae tenetur.</p>
-            </div>
-
-            <div class="row contact-info">
-
-                <div class="col-md-4">
-                    <div class="contact-address">
-                        <i class="bi bi-geo-alt"></i>
-                        <h3>Address</h3>
-                        <address>A108 Adam Street, NY 535022, USA</address>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="contact-phone">
-                        <i class="bi bi-phone"></i>
-                        <h3>Phone Number</h3>
-                        <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="contact-email">
-                        <i class="bi bi-envelope"></i>
-                        <h3>Email</h3>
-                        <p><a href="mailto:info@example.com">info@example.com</a></p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="form">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group col-md-6 mt-3 mt-md-0">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                        </div>
-                    </div>
-                    <div class="form-group mt-3">
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group mt-3">
-                        <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                    </div>
-                    <div class="my-3">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your message has been sent. Thank you!</div>
-                    </div>
-                    <div class="text-center"><button type="submit">Send Message</button></div>
-                </form>
-            </div>
-
-        </div>
-    </section><!-- End Contact Section -->
 
 </main><!-- End #main -->
