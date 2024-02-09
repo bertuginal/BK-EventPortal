@@ -57,27 +57,30 @@ namespace EventPortal.UI.Controllers
                 {
                     FestivalName = "WHAT A FEST",
                     FestivalType = "Festival",
-                    //FestivalDescription = "Festival",
+                    FestivalDescription = "Festival",
                     FestivalTime = "22 Ağustos - 25 Ağustos",
                     FestivalLocation = "Foça Acar Camping, Foça/İzmir",
+                    FestivalPrice = 200.00,
                     FestivalImage = "what-a-fest.png"
                 },
                 new Festival
                 {
                     FestivalName = "SAKARYA MÜZİK FESTİVALİ",
                     FestivalType = "Festival",
-                    //FestivalDescription = "Festival",
+                    FestivalDescription = "Festival",
                     FestivalTime = "16 Mayıs - 18 Mayıs",
                     FestivalLocation = "Del Lago Hotel, Sakarya",
+                    FestivalPrice = 200.00,
                     FestivalImage = "sakarya-muzik-festivali.jpg"
                 },
                 new Festival
                 {
                     FestivalName = "HOLİFEST İSTANBUL",
                     FestivalType = "Festival",
-                    //FestivalDescription = "Festival",
+                    FestivalDescription = "Festival",
                     FestivalTime = "25 Mayıs - 26 Mayıs",
                     FestivalLocation = "Life Park, İstanbul",
+                    FestivalPrice = 200.00,
                     FestivalImage = "holi-fest.png"
                 }
             };
@@ -87,27 +90,30 @@ namespace EventPortal.UI.Controllers
                 {
                     TheatreName = "GÜLÜMSETEN HATIRALAR",
                     TheatreType = "Tiyatro",
-                    //TheatreDescription = "Tiyatro",
+                    TheatreDescription = "Tiyatro",
                     TheatreTime = "09 Şubat Cuma, 20.00",
                     TheatreLocation = "Mall Of Antalya",
+                    TheatrePrice = 250.00,
                     TheatreImage = "gulumseten-hatiralar.jpg"
                 },
                 new Theatre
                 {
                     TheatreName = "MADONNA KÜRK MANTOLU",
                     TheatreType = "Tiyatro",
-                    //TheatreDescription = "Tiyatro",
+                    TheatreDescription = "Tiyatro",
                     TheatreTime = "14 Şubat Çarşamba, 20.00",
                     TheatreLocation = "Aralık Sahne",
+                    TheatrePrice = 250.00,
                     TheatreImage = "madonna-kurk-mantolu.jpeg"
                 },
                 new Theatre
                 {
                     TheatreName = "SÜT KARDEŞLER",
                     TheatreType = "Tiyatro",
-                    //TheatreDescription = "Tiyatro",
+                    TheatreDescription = "Tiyatro",
                     TheatreTime = "13 Mart Çarşamba, 20.30",
                     TheatreLocation = "Bostanlı Suat Taşer Tiyatrosu",
+                    TheatrePrice = 250.00,
                     TheatreImage = "sut-kardesler.jpg"
                 }
             };
@@ -120,6 +126,7 @@ namespace EventPortal.UI.Controllers
                     ExhibitionDescription = "Stand Up",
                     ExhibitionTime = "09 Şubat Cuma, 20.30",
                     ExhibitionLocation = "Bostanlu Suat Taşer Tiyatrosu",
+                    ExhibitionPrice = 350.00,
                     ExhibitionImage = "dogu-demirkol.jpg"
                 },
                 new Exhibition
@@ -129,6 +136,7 @@ namespace EventPortal.UI.Controllers
                     ExhibitionDescription = "Stand Up",
                     ExhibitionTime = "17 Şubat Cumartesi, 20.00",
                     ExhibitionLocation = "İzmir Performance Hall",
+                    ExhibitionPrice = 350.00,
                     ExhibitionImage = "okan-cabalar.jpg"
                 },
                 new Exhibition
@@ -138,6 +146,7 @@ namespace EventPortal.UI.Controllers
                     ExhibitionDescription = "Stand Up",
                     ExhibitionTime = "16 Şubat Cuma",
                     ExhibitionLocation = "Bostanlı Suat Taşer Tiyatrosu",
+                    ExhibitionPrice = 350.00,
                     ExhibitionImage = "meksika-acmazi.png"
                 }
             };

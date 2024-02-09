@@ -11,57 +11,73 @@ namespace EventPortal.UI.Controllers
             {
                 new Festival
                 {
-                    FestivalName = "SONAR ISTANBUL 2024",
+                    FestivalName = "MUSICFEST:SAKARYA",
+                    FestivalType = "Festival",
                     FestivalDescription = "Festival",
-                    FestivalTime = "26-28 Nisan",
-                    FestivalLocation = "Zorlu PSM",
-                    FestivalPrice = 140.00,
-                    FestivalImage = "86b347b9-f785-4204-b5f1-33240cfde830.jpg"
+                    FestivalTime = "06 Mart Çarşamba, 16.00",
+                    FestivalLocation = "Serdivan Kapalı Spor Salonu",
+                    FestivalPrice = 300.00,
+                    FestivalImage = "musicfest-sakarya.jpg"
                 },
                  new Festival
                 {
-                    FestivalName = "HOLIFEST",
+                    FestivalName = "MUSICFEST:NİĞDE",
+                    FestivalType = "Festival",
                     FestivalDescription = "Festival",
-                    FestivalTime = "25-27 Mayıs",
-                    FestivalLocation = "Life Park",
-                    FestivalPrice = 190.00,
-                    FestivalImage = "edaae3cf-d08c-47bc-9ebe-6a708efb7ba3.jpg"
+                    FestivalTime = "02 Mart Cumartesi, 17.00",
+                    FestivalLocation = "Niğde Merkez Spor Salonu",
+                    FestivalPrice = 300.00,
+                    FestivalImage = "musicfest-nigde.jpg"
                 },
                   new Festival
                 {
-                    FestivalName = "AKDENİZ GENÇLİK FESTİVALİ",
+                    FestivalName = "WHAT A FEST",
+                    FestivalType = "Festival",
                     FestivalDescription = "Festival",
-                    FestivalTime = "3-5 Mayıs",
-                    FestivalLocation = "Adana",
-                    FestivalPrice = 380.00,
-                    FestivalImage = "indir (1).jpg"
+                    FestivalTime = "22 Ağustos - 25 Ağustos",
+                    FestivalLocation = "Foça Acar Camping, Foça/İzmir",
+                    FestivalPrice = 500.00,
+                    FestivalImage = "what-a-fest.png"
                 },
-                   new Festival
+                new Festival
                 {
-                    FestivalName = "KOCAELİ MÜZİK FESTİVALİ",
+                    FestivalName = "SAKARYA MÜZİK FESTİVALİ",
+                    FestivalType = "Festival",
                     FestivalDescription = "Festival",
-                    FestivalTime = "10-12 Mayıs",
-                    FestivalLocation = "Kocaeli",
-                    FestivalPrice = 340.00,
-                    FestivalImage = "kocaeli-muzik-festivali.jpg"
+                    FestivalTime = "16 Mayıs - 18 Mayıs",
+                    FestivalLocation = "Del Lago Hotel, Sakarya",
+                    FestivalPrice = 450.00,
+                    FestivalImage = "sakarya-muzik-festivali.jpg"
                 },
-                    new Festival
+                new Festival
                 {
-                    FestivalName = "KÜÇÜKÇİFTLİK BARK",
+                    FestivalName = "HOLİFEST İSTANBUL",
+                    FestivalType = "Festival",
                     FestivalDescription = "Festival",
-                    FestivalTime = "12 Mayıs Pazar",
-                    FestivalLocation = "KüçükÇiftlik Park",
-                    FestivalPrice = 140.00,
-                    FestivalImage = "DhxaZJ0W0AETOu1.jpg"
+                    FestivalTime = "25 Mayıs - 26 Mayıs",
+                    FestivalLocation = "Life Park, İstanbul",
+                    FestivalPrice = 250.00,
+                    FestivalImage = "holi-fest.png"
                 },
-                     new Festival
+                new Festival
                 {
-                    FestivalName = "GEZGİNFEST",
+                    FestivalName = "İZMİR TATTOO FEST",
+                    FestivalType = "Festival",
                     FestivalDescription = "Festival",
-                    FestivalTime = "14-16 Haziran",
-                    FestivalLocation = "Kocaeli",
-                    FestivalPrice = 260.00,
-                    FestivalImage = "gezginfest.jpg"
+                    FestivalTime = "08 Mart Cuma, 11.00",
+                    FestivalLocation = "Fuar İzmir - Gaziemir",
+                    FestivalPrice = 350.00,
+                    FestivalImage = "izmir-tattoo-fest.jpg"
+                },                         
+                new Festival
+                {
+                    FestivalName = "GRAND VALENTINE'S DAY FEST",
+                    FestivalType = "Festival",
+                    FestivalDescription = "Festival",
+                    FestivalTime = "14 Şubat Çarşamba, 19.00",
+                    FestivalLocation = "Club Mirador",
+                    FestivalPrice = 200.00,
+                    FestivalImage = "grand-valentines-day-fest.jpg"
                 }
 
             };

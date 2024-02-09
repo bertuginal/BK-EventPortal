@@ -1,4 +1,4 @@
-﻿@model List<EventPortal.DAL.Models.Concert>
+﻿@model List<EventPortal.DAL.Models.Theatre>
 
 @{
     ViewData["Title"] = "Index";
@@ -8,16 +8,16 @@
 <!-- ======= Hero Section ======= -->
 <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
-        <h1 class="mb-4 pb-0">En Güncel<br><span>Konser</span> Etkinlikleri</h1>
+        <h1 class="mb-4 pb-0">En Güncel<br><span>Tiyatro</span> Etkinlikleri</h1>
         <p class="mb-4 pb-0">Eğlenceyi kaçırmamak için hemen biletini al!</p>
-        <a href="#hotels" class="about-btn scrollto">Tüm Konserler ≫</a>
+        <a href="#hotels" class="about-btn scrollto">Tüm Tiyatrolar ≫</a>
     </div>
 </section>
 <!-- End Hero Section -->
 
 <main id="main">  
 
-    <!-- ======= Concerts Section ======= -->
+    <!-- ======= Theatres Section ======= -->
     <section id="hotels" class="section-with-bg" style="background-color : #141A2B">
 
       <div class="container" data-aos="fade-up">        
@@ -27,19 +27,19 @@
           <div class="col-lg-3 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-              <a href="#"><img src="~/theevent/assets/img/activities/concert/@item.ConcertImage" alt="@item.ConcertType" class="img-fluid"></a>
+              <a href="#"><img src="~/theevent/assets/img/activities/theatre/@item.TheatreImage" alt="@item.TheatreType" class="img-fluid"></a>
               </div>
-              <h3><a href="#">@item.ConcertName</a></h3>
-              <p>@item.ConcertDescription</p>
-              <p>@item.ConcertTime</p>
-              <p>@item.ConcertLocation</p>
+              <h3><a href="#">@item.TheatreName</a></h3>
+              <p>@item.TheatreDescription</p>
+              <p>@item.TheatreTime</p>
+              <p>@item.TheatreLocation</p>
             </div>
           </div>
           }
       </div>
 
     </section>
-    <!-- End Concerts Section -->
+    <!-- End Theatres Section -->
 
     <br />
 

@@ -11,57 +11,63 @@ namespace EventPortal.UI.Controllers
             {
                 new Theatre
                 {
-                    TheatreName = "CİMRİ",
+                    TheatreName = "OTOMATİK PORTAKAL",
+                    TheatreType = "Tiyatro",
                     TheatreDescription = "Tiyatro",
-                    TheatreTime = "14 Şubat Çarşamba",
-                    TheatreLocation = "Maximum UNIQ Hall",
-                    TheatrePrice = 150.00,
-                    TheatreImage = "0000190_cimri.jpg"
+                    TheatreTime = "10 Şubat Cumartesi, 20.30",
+                    TheatreLocation = "Ahmed Adnan Saygun Sanat Merkezi",
+                    TheatrePrice = 962.50,
+                    TheatreImage = "otomatik-portakal.jpg"
                 },
                 new Theatre
                 {
-                    TheatreName = "AYDINLIKEVLER",
+                    TheatreName = "VEDA OYUNU",
                     TheatreDescription = "Tiyatro",
-                    TheatreTime = "15 Şubat Perşembe",
-                    TheatreLocation = "Bostancı Gösteri Merkezi",
-                    TheatrePrice = 180.00,
-                    TheatreImage = "aydinlikevler-yatay.jpg"
+                    TheatreType = "Tiyatro",
+                    TheatreTime = "10 Şubat Cumartesi, 20.30",
+                    TheatreLocation = "Bostanlı Suat Taşer Tiyatrosu",
+                    TheatrePrice = 400.00,
+                    TheatreImage = "veda-oyunu.jpeg"
                 },
                 new Theatre
                 {
-                    TheatreName = "ZENGİN MUTFAĞI",
+                    TheatreName = "GÜLÜMSETEN HATIRALAR",
+                    TheatreType = "Tiyatro",
                     TheatreDescription = "Tiyatro",
-                    TheatreTime = "16 Şubat Cuma",
-                    TheatreLocation = "Maximum UNIQ Hall",
-                    TheatrePrice = 350.00,
-                    TheatreImage = "zengin-mutfagi-04.jpg"
+                    TheatreTime = "09 Şubat Cuma, 20.00",
+                    TheatreLocation = "Mall Of Antalya",
+                    TheatrePrice = 250.00,
+                    TheatreImage = "gulumseten-hatiralar.jpg"
                 },
                 new Theatre
                 {
-                    TheatreName = "MONTAİGNE",
+                    TheatreName = "MADONNA KÜRK MANTOLU",
+                    TheatreType = "Tiyatro",
                     TheatreDescription = "Tiyatro",
-                    TheatreTime = "17 Şubat Cumartesi",
-                    TheatreLocation = "Oda Tiyatrosu",
-                    TheatrePrice = 270.00,
-                    TheatreImage = "396024018_18391995217028468_7905172375322033882_n-2-1024x574.jpg"
+                    TheatreTime = "14 Şubat Çarşamba, 20.00",
+                    TheatreLocation = "Aralık Sahne",
+                    TheatrePrice = 250.00,
+                    TheatreImage = "madonna-kurk-mantolu.jpeg"
                 },
                 new Theatre
                 {
-                    TheatreName = "İBRAHİM SELİM İLE BU GECE",
-                    TheatreDescription = "Talk Show",
-                    TheatreTime = "18 Şubat Pazar",
-                    TheatreLocation = "Zorlu PSM",
-                    TheatrePrice = 210.00,
-                    TheatreImage = "indir (6).jpg"
+                    TheatreName = "SÜT KARDEŞLER",
+                    TheatreType = "Tiyatro",
+                    TheatreDescription = "Tiyatro",
+                    TheatreTime = "13 Mart Çarşamba, 20.30",
+                    TheatreLocation = "Bostanlı Suat Taşer Tiyatrosu",
+                    TheatrePrice = 250.00,
+                    TheatreImage = "sut-kardesler.jpg"
                 },
                 new Theatre
                 {
-                    TheatreName = "SAATLERİ AYARLAMA ENSTİTÜSÜ",
+                    TheatreName = "JEKYLL&HYDE",
+                    TheatreType = "Tiyatro",
                     TheatreDescription = "Tiyatro",
-                    TheatreTime = "19 Şubat Pazartesi",
-                    TheatreLocation = "Maximum UNIQ Hall",
-                    TheatrePrice = 190.00,
-                    TheatreImage = "9a1f44e4140943a69876550fa02a5c39.jpg"
+                    TheatreTime = "18 Şubat Pazar, 21.00",
+                    TheatreLocation = "Ahmed Adnan Saygun Sanat Merkezi",
+                    TheatrePrice = 741.00,
+                    TheatreImage = "jekyll-hyde.jpg"
                 },
                 new Theatre
                 {
@@ -74,21 +80,23 @@ namespace EventPortal.UI.Controllers
                 },
                 new Theatre
                 {
-                    TheatreName = "TİMSAH ATEŞİ",
+                    TheatreName = "ÇOK GÜZEL HAREKETLER 2",
+                    TheatreType = "Tiyatro",
                     TheatreDescription = "Tiyatro",
-                    TheatreTime = "22 Şubat Perşembe",
-                    TheatreLocation = "Zorlu PSM",
-                    TheatrePrice = 320.00,
-                    TheatreImage = "indir (7).jpg"
+                    TheatreTime = "17 Mart Pazar, 15.30",
+                    TheatreLocation = "Bostanlı Suat Taşer Tiyatrosu",
+                    TheatrePrice = 500.00,
+                    TheatreImage = "cok-guzel-hareketler-2.jpeg"
                 },
                 new Theatre
                 {
-                    TheatreName = "KÜHEYLAN",
+                    TheatreName = "ÖLÜ'N BİZİ AYIRANA DEK",
+                    TheatreType = "Tiyatro",
                     TheatreDescription = "Tiyatro",
-                    TheatreTime = "24 Şubat Cumartesi",
-                    TheatreLocation = "Maximum UNIQ Hall",
-                    TheatrePrice = 120.00,
-                    TheatreImage = "indir (8).jpg"
+                    TheatreTime = "17 Şubat Cumartesi, 20.00",
+                    TheatreLocation = "Hikmet Şimşek Sanat Merkezi",
+                    TheatrePrice = 500.00,
+                    TheatreImage = "olun-bizi-ayirana-dek-oyunu.png"
                 },
 
             };
