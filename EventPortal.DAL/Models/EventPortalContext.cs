@@ -13,5 +13,10 @@ namespace EventPortal.DAL.Models
         {
             optionsBuilder.UseSqlServer();
         }
+
+        public DbSet<Concert> Concerts { get; set; }
+        public DbSet<Festival> Festivals { get; set; }
+        public DbSet<Theatre> Theatres { get; set; }
+        public DbSet<Exhibition> Exhibitions { get; set; }
     }
 }

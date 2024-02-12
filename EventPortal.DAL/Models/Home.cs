@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EventPortal.DAL.Models
 {
-    public class Home
+    public class Home : BaseModel
     {
         public List<Concert> ConcertList { get; set; }
         public List<Festival> FestivalList { get; set; }

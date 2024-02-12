@@ -1,4 +1,4 @@
-﻿@model List<EventPortal.DAL.Models.Exhibition>
+﻿@model EventPortal.DAL.Models.Home
 
 @{
     ViewData["Title"] = "Index";
@@ -22,14 +22,14 @@
 
       <div class="container" data-aos="fade-up">        
         <div class="row" data-aos="fade-up" data-aos-delay="100">
-            @foreach (var item in Model) 
+            @foreach (var item in Model.ExhibitionList) 
                 {
           <div class="col-lg-3 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-              <a href="#"><img src="~/theevent/assets/img/activities/exhibition/@item.ExhibitionImage" alt="@item.ExhibitionType" class="img-fluid"></a>
+              <a href="/exhibition/details/@item.Id"><img src="~/theevent/assets/img/activities/exhibition/@item.ExhibitionImage" alt="@item.ExhibitionType" class="img-fluid"></a>
               </div>
-              <h3><a href="#">@item.ExhibitionName</a></h3>
+              <h3><a href="/exhibition/details/@item.Id">@item.ExhibitionName</a></h3>
               <p>@item.ExhibitionDescription</p>
               <p>@item.ExhibitionTime</p>
               <p>@item.ExhibitionLocation</p>

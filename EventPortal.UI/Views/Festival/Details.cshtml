@@ -1,208 +1,82 @@
-﻿@model EventPortal.DAL.Models.Home
-
+﻿@model EventPortal.DAL.Models.Festival
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<main id="main" class="main-page" style="background-color : #141A2B">
 
-<!-- ======= Hero Section ======= -->
-<section id="hero">
-    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
-        <h1 class="mb-4 pb-0">Güncel Etkinlikler<br><span>Event Portal</span> İle Sizlerle</h1>
-        <p class="mb-4 pb-0">Konserler, Festivaller, Tiyatrolar, Gösteriler ve Daha Fazlası...</p>
-        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>
-        <a href="#speakers" class="about-btn scrollto">Tüm Etkinlikler ≫</a>
-    </div>
-</section><!-- End Hero Section -->
-
-<main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about">
-        <div class="container position-relative" data-aos="fade-up">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>About The Event</h2>
-                    <p>
-                        Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut
-                        accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in
-                        est ut optio sequi unde.
-                    </p>
-                </div>
-                <div class="col-lg-3">
-                    <h3>Where</h3>
-                    <p>Downtown Conference Center, New York</p>
-                </div>
-                <div class="col-lg-3">
-                    <h3>When</h3>
-                    <p>Monday to Wednesday<br>10-12 December</p>
-                </div>
-            </div>
-        </div>
-    </section><!-- End About Section -->
-       
-    <!-- ======= Activities Section ======= -->
-    <section id="speakers">
-        <div class="container" data-aos="fade-up">
-            <div class="section-header">
-                <h2>KONSERLER</h2>
-                <p>Hemen yerini ayırt!</p>
-            </div>
+    <!-- ======= Speaker Details Sectionn ======= -->
+    <section id="speakers-details">
+        <div class="container">
 
             <div class="row">
-                @foreach (var item in Model.ConcertList) 
-                {
-                <div class="col-lg-4 col-md-6">
-                    <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-                            <a href="/concert/details/@item.Id"><img src="~/theevent/assets/img/activities/concert/@item.ConcertImage" alt="@item.ConcertType" class="img-fluid"></a>
-                        <div class="details">
-                                <h3><a href="/concert/details/@item.Id">@item.ConcertName</a></h3>
-                                <p style="color : #FFFFFF">@item.ConcertType</p>
-                                <p>@item.ConcertDescription</p>
-                                <p>@item.ConcertTime</p>
-                                <p>@item.ConcertLocation</p>                                
+                <div class="col-md-6">
+                    <img src="~/theevent/assets/img/activities/festival/@Model.FestivalImage" alt="" class="img-fluid">
+                </div>
+
+                <div class="col-md-6">
+                    <div class="details">
+
+                        <div style="border : 2px solid #f5f5f5; border-radius : 25px; background-color : #f5f5f5; padding-left: 15px; padding-right: 15px; padding-bottom : 15px">
+                            <br />
+                            <h2>@Model.FestivalName</h2>
+                            <h6><b><a href="#"><i class="bi bi-tag"></i> @Model.FestivalType</a></b></h6>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                            <div style="border : 2px solid #f5f5f5; border-radius : 25px; background-color : #dcdcdc; padding-left: 15px; padding-top : 20px; padding-bottom : 10px">
+                            <h7><b> ETKİNLİK DETAYI</b></h7>
+                            <br />
+                            <br />
+                            <p>@Model.FestivalDescription Voluptatem perferendis sed assumenda voluptatibus. Laudantium molestiae sint. Doloremque odio dolore dolore sit. Quae labore alias ea omnis ex expedita sapiente molestias atque. Optio voluptas et.</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                }
-                <a href="~/concert"><button type="button" class="btn btn-success btn-lg btn-block" style="padding : 5px 489px">KONSERLER ≫</button></a>
-            </div>            
-        </div>
 
-        <br />
-        <br />
-        <br />
+                        <br />
 
-        <div class="container" data-aos="fade-up">
-            <div class="section-header">
-                <h2>FESTİVALLER</h2>
-                <p>Hemen yerini ayırt!</p>
-            </div>
+                        <div style="border : 2px solid #f2f2f2; border-radius : 25px; background-color : #f2f2f2; padding-left: 15px; padding-right: 15px; padding-bottom : 20px; padding-top : 20px">
+                            <div style="border : 2px solid #cfcfcf; border-radius : 15px; padding-top : 15px; padding-left : 15px; padding-right : 15px; padding-bottom : 15px;">
+                                <p><i class="bi bi-alarm"></i><b> @Model.FestivalTime</b></p>
+                                <p><i class="bi bi-pin-angle"></i> @Model.FestivalLocation</p>
+                                <h3 style="text-align : right"><b>@Model.FestivalPrice TL</b></h3>
+                                <p style="text-align : right; font-size : 10px;">Başlayan Fiyatlarla</p>
 
-            <div class="row">
-                @foreach (var item in Model.FestivalList)
-                {
-                    <div class="col-lg-4 col-md-6">
-                        <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-                            <a href="/festival/details/@item.Id"><img src="~/theevent/assets/img/activities/festival/@item.FestivalImage" alt="@item.FestivalType" class="img-fluid"></a>
-                            <div class="details">
-                                <h3><a href="/festival/details/@item.Id">@item.FestivalName</a></h3>
-                                <p style="color : #FFFFFF">@item.FestivalType</p>
-                                <p>@item.FestivalDescription</p>
-                                <p>@item.FestivalTime</p>
-                                <p>@item.FestivalLocation</p>
                             </div>
                         </div>
                     </div>
-                }
-                <a href="~/festival"><button type="button" class="btn btn-success btn-lg btn-block" style="padding : 5px 486px">FESTİVALLER ≫</button></a>
+                </div>
+
             </div>
         </div>
 
-        <br />
-        <br />
-        <br />
+    </section>
 
-        <div class="container" data-aos="fade-up">
-            <div class="section-header">
-                <h2>TİYATROLAR</h2>
-                <p>Hemen yerini ayırt!</p>
-            </div>
+    <!-- ======= Venue Section ======= -->
+    <section id="venue">
 
-            <div class="row">
-                @foreach (var item in Model.TheatreList)
-                {
-                    <div class="col-lg-4 col-md-6">
-                        <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-                            <a href="/theatre/details/@item.Id"><img src="~/theevent/assets/img/activities/theatre/@item.TheatreImage" alt="@item.TheatreType" class="img-fluid"></a>
-                            <div class="details">
-                                <h3><a href="/theatre/details/@item.Id">@item.TheatreName</a></h3>
-                                <p style="color : #FFFFFF">@item.TheatreType</p>
-                                <p>@item.TheatreDescription</p>
-                                <p>@item.TheatreTime</p>
-                                <p>@item.TheatreLocation</p>
-                            </div>
+        <div class="container-fluid" data-aos="fade-up">
+
+            <div class="row g-0">
+                <div class="col-lg-6 venue-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-lg-6 venue-info">
+                    <div class="row justify-content-center">
+                        <div class="col-11 col-lg-8 position-relative">
+                            <h3>@Model.FestivalLocation</h3>
                         </div>
-                    </div>
-                }
-                <a href="~/theatre"><button type="button" class="btn btn-success btn-lg btn-block" style="padding : 5px 487px">TİYATROLAR ≫</button></a>
-            </div>
-        </div>
-
-        <br />
-        <br />
-        <br />
-
-        <div class="container" data-aos="fade-up">
-            <div class="section-header">
-                <h2>GÖSTERİLER</h2>
-                <p>Hemen yerini ayırt!</p>
-            </div>
-
-            <div class="row">
-                @foreach (var item in Model.ExhibitionList)
-                {
-                    <div class="col-lg-4 col-md-6">
-                        <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-                            <a href="/exhibition/details/@item.Id"><img src="~/theevent/assets/img/activities/exhibition/@item.ExhibitionImage" alt="@item.ExhibitionType" class="img-fluid"></a>
-                            <div class="details">
-                                <h3><a href="/exhibition/details/@item.Id">@item.ExhibitionName</a></h3>
-                                <p style="color : #FFFFFF">@item.ExhibitionType</p>
-                                <p>@item.ExhibitionDescription</p>
-                                <p>@item.ExhibitionTime</p>
-                                <p>@item.ExhibitionLocation</p>
-                            </div>
-                        </div>
-                    </div>
-                }
-                <a href="~/exhibition"><button type="button" class="btn btn-success btn-lg btn-block" style="padding : 5px 487px">GÖSTERİLER ≫</button></a>
-            </div>
-        </div>
-
-    </section><!-- End Activities Section -->
-
-    <br />
-    <br />
-
-    <!-- ======= Subscribe Section ======= -->
-    <section id="subscribe">
-        <div class="container" data-aos="zoom-in">
-            <div class="section-header">
-                <h2>Newsletter</h2>
-                <p>Rerum numquam illum recusandae quia mollitia consequatur.</p>
-            </div>
-
-            <form method="POST" action="#">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 col-md-10 d-flex">
-                        <input type="text" class="form-control" placeholder="Enter your Email">
-                        <button type="submit" class="ms-2">Subscribe</button>
                     </div>
                 </div>
-            </form>
-
-        </div>
-    </section><!-- End Subscribe Section -->
-
-    <br />
-    <br />
-
-    <!-- ======= Gallery Section ======= -->
-    <section id="gallery">
-
-        <div class="gallery-slider swiper">            
-            <div class="swiper-wrapper align-items-center">
-                @foreach (var item in Model.ImageList)
-                {
-                    <div class="swiper-slide"><a href="~/theevent/assets/img/activities/imagelist/@item.Link" class="gallery-lightbox"><img src="~/theevent/assets/img/activities/imagelist/@item.ImageUrl" class="img-fluid" alt=""></a></div>
-                }
             </div>
-            <div class="swiper-pagination"></div>            
+
         </div>
 
-    </section><!-- End Gallery Section -->
-
+    </section><!-- End Venue Section -->
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="section-bg" style="background-color : #f5f5f5">
 
@@ -268,8 +142,10 @@
 
         </div>
     </section><!-- End Contact Section -->
+   
+
     <!-- =======  F.A.Q Section ======= -->
-    <section id="faq">
+    <section id="faq" style="background-color : #f5f5f5">
 
         <div class="container" data-aos="fade-up">
 
@@ -277,7 +153,7 @@
                 <h2>S.S.S </h2>
             </div>
 
-            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100" >
                 <div class="col-lg-9">
 
                     <ul class="faq-list">

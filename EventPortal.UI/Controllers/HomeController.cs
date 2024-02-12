@@ -22,8 +22,9 @@ namespace EventPortal.UI.Controllers
             {                
                 new Concert
                 {
+                    Id = 1,
                     ConcertName = "HADİSE",
-                    ConcertType = "Pop",
+                    ConcertType = "Konser",
                     ConcertDescription = "Pop Müzik",
                     ConcertTime = "19 Haziran Çarşamba, 21.30",
                     ConcertLocation = "Jolly Joker, Beyoğlu/İstanbul",
@@ -32,8 +33,9 @@ namespace EventPortal.UI.Controllers
                 },
                  new Concert
                 {
+                    Id = 2,
                     ConcertName = "ATHENA",
-                    ConcertType = "Pop",
+                    ConcertType = "Konser",
                     ConcertDescription = "Pop Müzik",
                     ConcertTime = "02 Mart Cumartesi, 22.00",
                     ConcertLocation = "Hangout PSM, Bornova/İzmir",
@@ -42,8 +44,9 @@ namespace EventPortal.UI.Controllers
                 },
                 new Concert
                 {
+                    Id = 3,
                     ConcertName = "AYŞEGÜL ALDİNÇ",
-                    ConcertType = "Pop",
+                    ConcertType = "Konser",
                     ConcertDescription = "Pop Müzik",
                     ConcertTime = "09 Şubat Cuma, 21.00",
                     ConcertLocation = "SoldOut Performance Hall",
@@ -55,6 +58,7 @@ namespace EventPortal.UI.Controllers
             {                
                 new Festival
                 {
+                    Id = 1,
                     FestivalName = "WHAT A FEST",
                     FestivalType = "Festival",
                     FestivalDescription = "Festival",
@@ -65,6 +69,7 @@ namespace EventPortal.UI.Controllers
                 },
                 new Festival
                 {
+                    Id = 2,
                     FestivalName = "SAKARYA MÜZİK FESTİVALİ",
                     FestivalType = "Festival",
                     FestivalDescription = "Festival",
@@ -75,6 +80,7 @@ namespace EventPortal.UI.Controllers
                 },
                 new Festival
                 {
+                    Id = 3,
                     FestivalName = "HOLİFEST İSTANBUL",
                     FestivalType = "Festival",
                     FestivalDescription = "Festival",
@@ -88,6 +94,7 @@ namespace EventPortal.UI.Controllers
             {                
                 new Theatre
                 {
+                    Id = 1,
                     TheatreName = "GÜLÜMSETEN HATIRALAR",
                     TheatreType = "Tiyatro",
                     TheatreDescription = "Tiyatro",
@@ -108,6 +115,7 @@ namespace EventPortal.UI.Controllers
                 },
                 new Theatre
                 {
+                    Id = 2,
                     TheatreName = "SÜT KARDEŞLER",
                     TheatreType = "Tiyatro",
                     TheatreDescription = "Tiyatro",
@@ -121,6 +129,7 @@ namespace EventPortal.UI.Controllers
             {
                 new Exhibition
                 {
+                    Id = 1,
                     ExhibitionName = "DOĞU DEMİRKOL",
                     ExhibitionType = "Gösteri",
                     ExhibitionDescription = "Stand Up",
@@ -131,6 +140,7 @@ namespace EventPortal.UI.Controllers
                 },
                 new Exhibition
                 {
+                    Id = 2,
                     ExhibitionName = "OKAN CABALAR",
                     ExhibitionType = "Gösteri",
                     ExhibitionDescription = "Stand Up",
@@ -141,6 +151,7 @@ namespace EventPortal.UI.Controllers
                 },
                 new Exhibition
                 {
+                    Id = 3,
                     ExhibitionName = "MEKSİKA AÇMAZI",
                     ExhibitionType = "Gösteri",
                     ExhibitionDescription = "Stand Up",
@@ -155,42 +166,42 @@ namespace EventPortal.UI.Controllers
                 new HomeImage
                 {
                     ImageUrl = "hadise-konseri.jpg",
-                    Link = "https://www.youtube.com"
+                    Link = "details"
                 },
                 new HomeImage
                 {
                     ImageUrl = "athena-konseri.jpg",
-                    Link = "https://www.youtube.com"
+                    Link = "details"
                 },
                 new HomeImage
                 {
                     ImageUrl = "aysegul-aldinc-konseri.jpg",
-                    Link = "https://www.youtube.com"
+                    Link = "details"
                 },
                 new HomeImage
                 {
                     ImageUrl = "what-a-fest.png",
-                    Link = "#"
+                    Link = "details"
                 },
                 new HomeImage
                 {
                     ImageUrl = "saatleri-ayarlama-enstitusu.jpg",
-                    Link = "#"
+                    Link = "details"
                 },
                 new HomeImage
                 {
                     ImageUrl = "gulumseten-hatiralar.jpg",
-                    Link = "#"
+                    Link = "details"
                 },
                 new HomeImage
                 {
                     ImageUrl = "sut-kardesler.jpg",
-                    Link = "#"
+                    Link = "details"
                 },
                 new HomeImage
                 {
                     ImageUrl = "okan-cabalar.jpg",
-                    Link = "#"
+                    Link = "details"
                 }
             };
             var viewModel = new Home
