@@ -44,8 +44,31 @@
             <div id="logo" class="me-auto">
                 <!-- Uncomment below if you prefer to use a text logo -->
                 <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
-                <a href="index.html" class="scrollto"><img src="assets/img/logo.png" alt="" title=""></a>
+                <a href="/" class="scrollto"><img src="~/theevent/assets/img/logo.png" alt="" title=""></a>
             </div>
+
+
+            <section id="subintro" style="background-color : #141A2B; padding-top : 20px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="span8">
+                            <ul class="breadcrumb">
+                                <div class="span4">
+                                    <div class="search">
+                                        @using (Html.BeginForm())
+                                        {
+                                            <form class="input-append">
+                                                <input class="search-form" id="value" type="text" name="value" placeholder="Arama yap.." style="height : 38px; border-radius : 4px"/>
+                                                <button class="btn btn-light" type="submit" style="height : 36px"><i class="bi bi-search"></i></button>
+                                            </form>
+                                        }
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
@@ -78,7 +101,6 @@
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
             <a class="buy-tickets scrollto" href="#contact">Contact</a>
-
         </div>
 
         <script>
