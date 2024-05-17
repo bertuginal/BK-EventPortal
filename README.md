@@ -20,7 +20,7 @@
 - [.Net Core](https://dotnet.microsoft.com/en-us/)
 - [C#](https://learn.microsoft.com/en-us/dotnet/csharp/)
 - [Bootstrap](https://getbootstrap.com)
-- [Firebase](https://firebase.google.com)
+- [MSSQL](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
 ## 🚀&nbsp; Aşağıdaki yönlendirmeler ile projemi indirebilirsiniz!
 1. CMD istemcisini aç!
