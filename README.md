@@ -1,5 +1,5 @@
 <h2 align="center">Gather Event API & Ticketing Engine 🎫🚀</h2>
-<h3 align="center">EVENT PORTAL - TECHCAREER .NET CORE DOMINATİON BOOTCAMP</h3>
+<h3 align="center">Event Portal - Techcareer .Net Core Domination Bootcamp Final Project</h3>
 
 A structured, full-stack event ticketing platform and RESTful API engineered utilizing C# and the .NET Core ecosystem. The application strictly implements N-Tier Architecture patterns to decouple database migrations, business validation rules, and responsive presentation layers. Developed as the Final Graduation Project for the **Techcareer .NET Core Domination Bootcamp**.
 
