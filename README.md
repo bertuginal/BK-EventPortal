@@ -1,38 +1,52 @@
-<h2 align="center">EVENT PORTAL - TECHCAREER .NET CORE DOMINATİON BOOTCAMP</h2>
+<h2 align="center">Gather Event API & Ticketing Engine 🎫🚀</h2>
+<h3 align="center">EVENT PORTAL - TECHCAREER .NET CORE DOMINATİON BOOTCAMP</h3>
 
-  <h4 align="center">.Net Core teknolojisi ve bootstrap kullanılarak geliştirilen bir Rest API projesidir.</h4>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+A structured, full-stack event ticketing platform and RESTful API engineered utilizing C# and the .NET Core ecosystem. The application strictly implements N-Tier Architecture patterns to decouple database migrations, business validation rules, and responsive presentation layers. Developed as the Final Graduation Project for the **Techcareer .NET Core Domination Bootcamp**.
 
 ---
 
-## :star: Neler yapıldı?
-- .Net Core teknolojisi kullanılarak "Business Logic Layer(BLL), Data Access Layer(DAL) ve User Interface(UI)" katmanları ile Web API oluşturuldu. 
+## 🗂️ Architectural Layering & Features
 
-- Bilet satan bir web sitesinin verileri çekilerek bir repo oluşturuldu.
+* **N-Tier Architecture**: Divided domain workflows into three highly specialized logical boundaries:
+  * `EventPortal.DAL`: Data Access Layer managing entities, database context models, and MSSQL migrations.
+  * `EventPortal.BLL`: Business Logic Layer enforcing system evaluation rules and service mappings.
+  * `EventPortal.UI`: User Interface layer rendering dynamic data structures seamlessly.
+* **Ticketing Lifecycle Management**: Modeled full relational schemas enabling platform users to process event listings, verify remaining capacities, and trigger simulated ticket acquisitions.
+* **Responsive Client Integration**: Developed clean client views using Bootstrap to consume internal REST endpoints and display formatted datagrids.
 
-- Boostrap kullanılarak front-end alanında bir UI oluşturuldu ve çekilen veriler kullanıcıya gösterildi.
+## 🛠️ Tech Stack & Specifications
 
-## :warning: Hangi Teknolojiler Kullanıldı?
+* **Language**: C#
+* **Framework**: .NET Core (Web API & MVC principles)
+* **Architecture**: N-Tier (Layered) Architecture
+* **Database Management**: MSSQL (Microsoft SQL Server)
+* **Front-End Styling**: Bootstrap, HTML5, CSS3
 
-- [.Net Core](https://dotnet.microsoft.com/en-us/)
-- [C#](https://learn.microsoft.com/en-us/dotnet/csharp/)
-- [Bootstrap](https://getbootstrap.com)
-- [MSSQL](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+## 🚀 Quick Start & Local Run
 
-## 🚀&nbsp; Aşağıdaki yönlendirmeler ile projemi indirebilirsiniz!
-1. CMD istemcisini aç!
-```
-WIN+R ile "Çalıştır" kutusunu açarak cmd yazıyoruz.
-```
-2. Repository indirmek için cmd istemcisine aşağıdaki kod ile clone işlemi!
-```
-$ git clone https://github.com/bertuginal/Etiya-Java-Spring-Boot.git
-```
+To clone the application assets and initialize the .NET compiler locally, process the following sequence:
 
-## :clap: Bana ulaşabilirsiniz!
-Herhangi bir öneriniz veya sorunuz için bana e-posta göndermekten çekinmeyin! :email: bertuginal@yahoo.com
+1. Clone this event portal workspace repository:
+   ```bash
+   git clone https://github.com
+   ```
+2. Navigate into the primary solution directory:
+   ```bash
+   cd gather-event-api
+   ```
+3. Update your connection strings in the local application configuration profiles to target your MSSQL instance.
+4. Restore project dependencies and fire up the host web server:
+   ```bash
+   dotnet restore
+   dotnet run --project EventPortal.UI
+   ```
 
-:star: <b>Projemi beğendiyseniz bana destek olmak için yıldızlayabilir misiniz?</b> :star:
+## 📬 Contact & Support
+
+For architecture mapping, clean code evaluations, or database schema discussions:
+
+📧 **Email:** bertuginal@yahoo.com
+
+ℹ️ **LinkedIn:** [in/bertuginal](https://www.linkedin.com/in/bertuginal/)
 
 
